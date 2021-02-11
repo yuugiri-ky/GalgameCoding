@@ -1,0 +1,224 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+105 MENU
+BEGIN
+    POPUP "结束"
+    BEGIN
+        MENUITEM "退出游戏",                        40001
+        MENUITEM "返回主界面",                       40002
+    END
+    POPUP "窗口"
+    BEGIN
+        MENUITEM "最小化",                         40003
+        MENUITEM "最大化",                         40004
+        MENUITEM "还原",                          40005
+        MENUITEM SEPARATOR
+        MENUITEM "窗口设置",                        40006
+    END
+    POPUP "文本"
+    BEGIN
+        MENUITEM "跳过已读",                        40007
+        MENUITEM "自动阅读",                        40008
+    END
+    MENUITEM "游戏设置",                        40009
+    MENUITEM "关于",                          40029
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+111 DIALOGEX 0, 0, 323, 271
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "窗口设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,215,250,50,14
+    PUSHBUTTON      "取消",IDCANCEL,265,250,50,14
+    CONTROL         "",1001,"SysTabControl32",0x0,7,7,309,240
+    PUSHBUTTON      "全部恢复默认设置",1011,7,250,81,14
+END
+
+113 DIALOGEX 0, 0, 297, 251
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "全屏模式",IDC_STATIC,7,0,283,23
+    CONTROL         "窗口化全屏",1004,"Button",BS_AUTORADIOBUTTON,60,8,85,10
+    CONTROL         "全屏",1005,"Button",BS_AUTORADIOBUTTON,163,8,74,10
+    CONTROL         "",1006,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,51,269,66
+    LTEXT           "★ 表示当前使用的分辨率",1019,14,41,193,8
+    GROUPBOX        "全屏缩放设定",IDC_STATIC,7,135,283,85
+    CONTROL         "无缩放",1003,"Button",BS_AUTORADIOBUTTON,23,149,251,10
+    CONTROL         "自动适应",1007,"Button",BS_AUTORADIOBUTTON,23,162,251,10
+    CONTROL         "横向缩放",1008,"Button",BS_AUTORADIOBUTTON,23,175,251,10
+    CONTROL         "纵向缩放",1009,"Button",BS_AUTORADIOBUTTON,23,188,251,10
+    CONTROL         "全屏缩放",1012,"Button",BS_AUTORADIOBUTTON,23,201,251,10
+    LTEXT           "※ 更改设定后建议进行测试",IDC_STATIC,21,223,256,8
+    PUSHBUTTON      "测试",1010,240,236,50,14
+    PUSHBUTTON      "恢复默认设置",1011,7,236,63,14
+    CONTROL         "显示所有分辨率",1020,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,119,101,10
+    GROUPBOX        "全屏分辨率",IDC_STATIC,7,27,283,105
+END
+
+114 DIALOGEX 0, 0, 297, 251
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "窗口大小设置",IDC_STATIC,7,2,65,8
+    CONTROL         "",1015,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,29,284,15
+    LTEXT           "小",1016,10,19,34,8
+    LTEXT           "大",1017,281,19,16,8
+    LTEXT           "当前窗口大小：",IDC_STATIC,7,52,95,8
+    LTEXT           "",1019,71,52,87,8
+    PUSHBUTTON      "恢复默认设置",1011,7,236,63,14
+END
+
+115 DIALOGEX 0, 0, 277, 104
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "窗口设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确定",IDOK,170,83,50,14
+    PUSHBUTTON      "取消",IDCANCEL,220,83,50,14
+    LTEXT           "如果画面正常显示，点击【确定】保存设置。",IDC_STATIC,27,26,224,17
+    LTEXT           "15秒后自动还原设置。",1019,78,49,120,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    111, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    113, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    114, DIALOG
+    BEGIN
+    END
+
+    115, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+111 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+113 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+114 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+115 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    101                     "緋色怪奇譚"
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
