@@ -9,7 +9,7 @@
 引擎信息：
 
 ```
-The relic Unified Game Platform engine. An engine that makes miracles possible, and powers all things age.
+The relic Unified Game Platform (rUGP) engine. An engine that makes miracles possible, and powers all things age.
 ```
 
 资源封包文件：
